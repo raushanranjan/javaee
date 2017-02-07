@@ -19,16 +19,14 @@ public class Lab2_1_2
          String  name = rs.getString("NAME");
          int age  = rs.getInt("AGE");
          String  address = rs.getString("ADDRESS");
-         float class = rs.getFloat("CLASS");
+         float salary = rs.getFloat("CLASS");
          System.out.println( "ID = " + id );
          System.out.println( "NAME = " + name );
          System.out.println( "AGE = " + age );
          System.out.println( "ADDRESS = " + address );
-         System.out.println( "SALARY = " + class );
+         System.out.println( "CLASS = " + salary );
          System.out.println();
       }
-
-
       rs.close();
       stmt.close();
       c.close();
@@ -36,6 +34,6 @@ public class Lab2_1_2
       System.err.println( e.getClass().getName() + ": " + e.getMessage() );
       System.exit(0);
     }
-    System.out.println("Table created successfully");
+    System.out.println("Operation done successfully");
   }
 }
